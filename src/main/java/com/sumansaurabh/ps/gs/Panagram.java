@@ -1,4 +1,4 @@
-package com.sumansaurabh.ps.coderpad;
+package com.sumansaurabh.ps.gs;
 
 public class Panagram {
 
