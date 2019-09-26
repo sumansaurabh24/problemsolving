@@ -1,4 +1,4 @@
-package com.sumansaurabh.ps.strings;
+package com.sumansaurabh.ps.dp;
 
 public class LongestCommonSubsequence {
 
