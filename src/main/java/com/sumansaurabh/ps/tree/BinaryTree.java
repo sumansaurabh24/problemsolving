@@ -2,6 +2,9 @@ package com.sumansaurabh.ps.tree;
 
 import com.sun.jmx.snmp.SnmpOidDatabase;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class BinaryTree {
 
     private Node root;
@@ -36,6 +39,26 @@ public class BinaryTree {
         }
 
         return (leftLca != null) ? leftLca : rightLca;
+    }
+
+    void printLevelOrder(){
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(root);
+
+        while (!queue.isEmpty()){
+
+            Node tempNode = queue.poll();
+            System.out.println(tempNode.data);
+
+            if(tempNode.left != null){
+                queue.add(tempNode.left);
+            }
+
+            if(tempNode.right != null){
+                queue.add(tempNode.right);
+            }
+        }
+
     }
 
     public static void main(String[] args) {
