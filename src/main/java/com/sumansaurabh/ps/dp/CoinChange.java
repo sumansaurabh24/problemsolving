@@ -1,7 +1,5 @@
 package com.sumansaurabh.ps.dp;
 
-import java.util.Arrays;
-
 public class CoinChange {
 
     static long countWays(int[] array, int length, int amount) {
